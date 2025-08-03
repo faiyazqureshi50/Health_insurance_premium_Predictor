@@ -6,8 +6,6 @@ model_rest = joblib.load(r"artifacts/model_rest.joblib")
 scaler_young = joblib.load(r"artifacts/scaler_young.joblib")
 scaler_rest = joblib.load(r"artifacts/scaler_rest.joblib")
 
-
-
 def calculate_normalized_risk(medical_history):
     risk_scores = {
         "diabetes": 6,
